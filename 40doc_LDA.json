@@ -1,0 +1,13 @@
+{
+  "embeddings": [
+    {
+      "tensorName": "My tensor",
+      "tensorShape": [
+        201615,
+        40
+      ],
+      "tensorPath": "https://www.dropbox.com/s/xpyj2g33eavf3ip/40_doc_lda_tensor.tsv?dl=0",
+      "metadataPath": "https://www.dropbox.com/s/ee0zf7i3wz0qjfw/40_doc_lda_metadata.tsv?dl=0"
+    }
+  ]
+}
