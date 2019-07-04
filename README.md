@@ -35,7 +35,7 @@ The x-axis of the dendrogram represents the topic numbers and y-axis represents 
 
 To see interactive plot open here https://plot.ly/create/?fid=bharadwajsannapaneni8021:9
 
-![Dendrogram to visualize topic clusters](https://plot.ly/create/?fid=bharadwajsannapaneni8021:9)
+![Dendrogram to visualize topic clusters](https://drive.google.com/open?id=1Nj3QT8nFvhAq8QUyNZXqOO88hYBKRo1q)
 
 
 The difference between topics can be visualized using topic difference heatmaps. X and y axes of the heat are topic numbers, and z axis is the difference between topics. We can hover around the plot and see the x, y and z coordinates along with +++ which indicates the intersection terms and -- which indicates non-intersection terms between the topics. 
