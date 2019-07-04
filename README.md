@@ -10,6 +10,7 @@ We upload Embedding vectors file [ download from here] and Metadata file [ downl
 
 Interactive Visualizations of PCA and t-SNE are here https://projector.tensorflow.org/?config=https://dl.dropboxusercontent.com/s/8c939vndmkog6uc/40doc_LDA.json?dl=0
 
+
 ### Using PCA:
 
 PCA helps us understand the Global structure of the data. Although it distorts the local structure, it tends to highlight the large scale structure. 
@@ -33,6 +34,9 @@ Dendrograms are used to analyze hierarchical clustering of data. Using dendrogra
 The x-axis of the dendrogram represents the topic numbers and y-axis represents the distance between topics. Lower they merge closer the topics are. For example topic 7 is far from the rest of the topics cluster. Topic 10 and topic 20 are very close.
 
 To see interactive plot open here https://plot.ly/create/?fid=bharadwajsannapaneni8021:9
+
+![Dendrogram to visualize topic clusters](https://plot.ly/create/?fid=bharadwajsannapaneni8021:9)
+
 
 The difference between topics can be visualized using topic difference heatmaps. X and y axes of the heat are topic numbers, and z axis is the difference between topics. We can hover around the plot and see the x, y and z coordinates along with +++ which indicates the intersection terms and -- which indicates non-intersection terms between the topics. 
 
