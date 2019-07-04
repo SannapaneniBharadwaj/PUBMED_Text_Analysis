@@ -54,11 +54,6 @@ Hovering on the nodes with mouse shows us the topic number along with its top wo
 To see the interactive plot, click here https://plot.ly/create/?fid=bharadwajsannapaneni8021:13
 
 
-To understand the theme of the topics/clusters, we can use show_topic which gives the relevant terms in an topic. For example, figure below shows the relevant terms of first topic. 
- 
-#### Have to place figure
-
-
 Till now topic ids are taken directly from Lda using show command. In next section, pyLDAvis has numbers shown on circles that are ranked according to topic prevalence in document. 
 
 
