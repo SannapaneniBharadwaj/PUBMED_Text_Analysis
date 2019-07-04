@@ -21,11 +21,15 @@ From PCA, the visualization looks like a Tetrahedron with a dense clustering at 
 
 In the visualization we can actually click at each point and see their topics with their probability in a given article, along with the article name. For example, the figure shows the point which represents the article titled ‘Mu, delta, and kappa opioid receptor agonists induce peripheral antinociception by activation of endogenous noradrenergic system’. This article belongs to topics 32, 10, 18, 22 and 30  with probabilities 0.94, 0.19, 0.014, 0.007 and 0.007 respectively. 
 
+![PCA](https://github.com/SannapaneniBharadwaj/PUBMED_Text_Analysis/blob/master/Images/PCA.png)
+
 ### Using T-SNE:
 
 t-SNE in contrast to PCA preserves the local neighborhood information while often distorting the global data structure. We can adjust the hyperparameters, Perplexity and Learning rate in the left menu. Perplexity indirectly balances the local and global aspects of the data. Intuitively it defines the number of closest neighbors each point has. Typically ideal perplexity varies between 5 to 50. However larger and denser dataset requires larger perplexity values. Different hyperparameters values leads to different T-SNE visualizations. 
 
 From the figures in the visualizations We can see that it has formed clusters of articles that belong to same topic and that cluster positions varies significantly based on hyper parameters.  Again we can click at each point and see their topics with their probability in a given article, along with the article title and journal title. 
+
+![t-SNE](https://github.com/SannapaneniBharadwaj/PUBMED_Text_Analysis/blob/master/Images/TSNE.png)
 
 ### Visualizing PUBMED abstracts LDA, using heatmaps and Dendrograms
 
@@ -35,8 +39,6 @@ The x-axis of the dendrogram represents the topic numbers and y-axis represents 
 
 To see interactive plot open here https://plot.ly/create/?fid=bharadwajsannapaneni8021:9
 
-![Dendrogram to visualize topic clusters](https://drive.google.com/open?id=1Nj3QT8nFvhAq8QUyNZXqOO88hYBKRo1q)
-
 
 The difference between topics can be visualized using topic difference heatmaps. X and y axes of the heat are topic numbers, and z axis is the difference between topics. We can hover around the plot and see the x, y and z coordinates along with +++ which indicates the intersection terms and -- which indicates non-intersection terms between the topics. 
 
@@ -44,8 +46,9 @@ The figure in the visualization shows the combined plot of dendrograms and heat 
 
 To see the interactive plot click here https://plot.ly/create/?fid=bharadwajsannapaneni8021:11
 
+![Heatmaps with Dendrogram to visualize topic clusters](https://github.com/SannapaneniBharadwaj/PUBMED_Text_Analysis/blob/master/Images/Heatmap_with_Dendrogram.png)
 
-Visualizing PUBMED abstracts LDA, using Topic Networks
+### Visualizing PUBMED abstracts LDA, using Topic Networks
 
 Topic Networks helps us to understand the relationship between topics. We can understand how the topics are connected and how closely they are connected. We can also understand the most influential topics by looking at the number of connections the topic make.
 
@@ -53,9 +56,11 @@ Hovering on the nodes with mouse shows us the topic number along with its top wo
 
 To see the interactive plot, click here https://plot.ly/create/?fid=bharadwajsannapaneni8021:13
 
+![Visualizing Topics using Topic Networks](https://github.com/SannapaneniBharadwaj/PUBMED_Text_Analysis/blob/master/Images/LDA_Topic_Networks.png)
 
 Till now topic ids are taken directly from Lda using show command. In next section, pyLDAvis has numbers shown on circles that are ranked according to topic prevalence in document. 
 
+![Top 25 key words in the LDA Topic 0](https://github.com/SannapaneniBharadwaj/PUBMED_Text_Analysis/blob/master/Images/LDA_Topics.png)
 
 ### Visualizing PUBMED abstracts LDA, using pyLDAvis
 
@@ -67,7 +72,9 @@ Left panel consists of circles which represents topics in the model. Bigger the 
 
 Right panel on the other hand shows different terms that are related to the topic selected in the left panel. So we can understand the theme of a topic by observing the relevant terms. Varying relevance metric ƛ gives different relevant terms for the topic. ƛ varies between 0 to 1, ƛ=1 means terms are ranked solely based on their probability in the topic while ƛ=0 means they are ranked after normalizing with the probability of their overall occurrence in corpus, in other words ƛ=0 ranks words that are exclusively higher in selected topic. A recommended value for ƛ is 0.6. Figure below shows the pyLDAvis Intertopic Distance Map along with relevant terms for Topic 5
 
-##### To see the interactive plots in jupyter notebook, click here http://nbviewer.jupyter.org/github/SannapaneniBharadwaj/PUBMED_Text_Analysis/blob/master/LDA_TensorBoard_Visualizations.ipynb#topic=5&lambda=1&term=
+To see the interactive plots in jupyter notebook, click here http://nbviewer.jupyter.org/github/SannapaneniBharadwaj/PUBMED_Text_Analysis/blob/master/LDA_TensorBoard_Visualizations.ipynb#topic=5&lambda=1&term=
+
+![Visualizing Topics using PyLDAVis](https://github.com/SannapaneniBharadwaj/PUBMED_Text_Analysis/blob/master/Images/PyLDA_Vis.png)
 
 ### Dynamic Topic Modelling
 
@@ -81,3 +88,4 @@ https://plot.ly/create/?fid=bharadwajsannapaneni8021:7
 
 Selected words are plotted with their probabilities throughout the years. Single topic dynamic modeling is performed, so that all the words belong to a single topic.
 
+![Visualizing Topics using PyLDAVis](https://github.com/SannapaneniBharadwaj/PUBMED_Text_Analysis/blob/master/Images/DTM_word_Probabilities.png)
